@@ -1,4 +1,7 @@
 FROM playwright/chromium:playwright-1.54.1
 
-RUN apt-get update && apt-get install -y --no-install-recommends git
+USER root
+
+RUN apt-get update && apt-get install -y --no-install-recommends git \
+  && rm -rf /var/lib/apt/lists/*
 RUN npm install -g yarn
