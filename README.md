@@ -1,5 +1,5 @@
 # playwright-tools
 
-Docker image from `playwright/chromium" with additional tools installed:
+Docker image from `playwright/chromium` with additional tools installed:
 * Git
 * Yarn
